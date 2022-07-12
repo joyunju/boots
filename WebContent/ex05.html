@@ -1,41 +1,47 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<!-- 메타태그 -->
-<!--  
-<meta name="viewport" content="width=device-width, initial-scale=1">
--->
+	<!-- 메타태그 -->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- 위 3개의 메타 태그는 *반드시* head 태그의 처음에 와야합니다; 어떤 다른 콘텐츠들은 반드시 이 태그들 *다음에* 와야 합니다 -->
+	
+	<!-- css -->
+	<link href="./assets/bootstrap/css/bootstrap.css" rel="stylesheet">
+	
+	<!-- 자바스크립트 -->
+	<!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요합니다) -->
+	<script src="./assets/js/jquery/jquery-1.12.4.js"></script>
+	<script src="./assets/bootstrap/js/bootstrap.js"></script>
 
-<!-- css -->
-<link href="/boots/assets/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
-
-<!-- 자바스크립트 -->
-<script type="text/javascript" src="/boots/assets/js/jquery/jquery-1.12.4.js"></script>
-<script type="text/javascript" src="/boots/assets/bootstrap/js/bootstrap.js"></script>
-
-
-<style type="text/css">
-div {border: 1px solid #000000;}
-.container {width: 1000px;} 
-
-</style>
-
-
-<title>Insert title here</title>
+	<style type="text/css">
+		th,td,li {cursor:pointer;}
+		div {border: 1px solid #000000;}
+		.container {width: 1000px;} 
+		
+	</style>
+	
+	<title>테이블</title>
 </head>
 <body>
-
 	 
 	<div class="container">
 			
 		<div class="row">
 			<div class="col-xs-12">
+				
+				<!-- 
+				•테이블 기본 table class="table"
+				•줄무늬 행 table class="table table-striped"
+				•선있는 테이블 table class="table table-bordered"
+				•행 hover table class="table table-hover"
+				•좁은폭 테이블 table class="table table-condensed"
+				-->
 			
-			
-				<table>
+				<table class="table table-hover">
 					<thead>
-						<tr>
+						<tr class="success">
 							<th>no</th>
 							<th>First Name</th>
 							<th>Last Name</th>
@@ -74,7 +80,7 @@ div {border: 1px solid #000000;}
 				        </li>
 				        <li><a href="#">1</a></li>
 				        <li><a href="#">2</a></li>
-				        <li><a href="#">3</a></li>
+				        <li class="active"><a href="#">3</a></li>
 				        <li><a href="#">4</a></li>
 				        <li><a href="#">5</a></li>
 				        <li>
